@@ -1,0 +1,108 @@
+:root {
+  --bg-color: #f7f7f7;
+  --text-color: #1e1e2f;
+  --accent-color: #ff5555;
+  --button-bg: #eee;
+}
+
+body.dark {
+  --bg-color: #1e1e2f;
+  --text-color: #f7f7f7;
+  --accent-color: #ff8c00;
+  --button-bg: #333;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.controls {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0 0.25rem;
+}
+
+select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 0.5rem;
+}
+
+#timer {
+  font-size: 3rem;
+  margin: 1.5rem 0;
+  color: var(--accent-color);
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--button-bg);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Mobile responsive tweaks */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  #timer {
+    font-size: 2.5rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}

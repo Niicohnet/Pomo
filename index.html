@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pomō</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Pomō</h1>
+
+    <div class="controls">
+      <label for="sessionLength">Session Length:</label>
+      <select id="sessionLength">
+        <option value="10">10 min</option>
+        <option value="20">20 min</option>
+        <option value="30">30 min</option>
+        <option value="40">40 min</option>
+        <option value="50">50 min</option>
+        <option value="60">60 min</option>
+      </select>
+
+      <label for="breakLength" id="breakLabel" class="hidden">Break Length:</label>
+      <select id="breakLength" class="hidden">
+        <option value="5">5 min</option>
+        <option value="10">10 min</option>
+        <option value="15">15 min</option>
+      </select>
+    </div>
+
+    <div id="timer">00:00</div>
+
+    <div class="buttons">
+      <button id="startBtn">Start</button>
+      <button id="darkModeToggle">🌙 Dark Mode</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
