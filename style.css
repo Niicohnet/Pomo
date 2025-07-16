@@ -66,10 +66,17 @@ select {
 
 .buttons {
   display: flex;
-  gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
 }
+
+.buttons button {
+  flex: 1 1 130px;
+  text-align: center;
+}
+
 
 button {
   padding: 0.6rem 1.2rem;
